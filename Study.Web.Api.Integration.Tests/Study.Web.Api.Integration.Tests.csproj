@@ -5,20 +5,20 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
+        <OutputType>Exe</OutputType>
+        <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+        <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="coverlet.collector" Version="6.0.4">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.10" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.0" />
+        <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.1.0" />
         <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="xunit.v3" Version="3.1.0" />
+        <PackageReference Include="xunit.v3.mtp-v2" Version="3.2.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -26,7 +26,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Study.Web.Api\Study.Web.Api.csproj" />
+        <ProjectReference Include="..\Study.Web.Api\Study.Web.Api.csproj"/>
     </ItemGroup>
 
 </Project>
