@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Props/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+  </Folder>
+  <Project Path="Study.Web.Api.Integration.Tests/Study.Web.Api.Integration.Tests.csproj" />
+  <Project Path="Study.Web.Api/Study.Web.Api.csproj" />
+</Solution>
